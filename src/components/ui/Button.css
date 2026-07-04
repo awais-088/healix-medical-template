@@ -1,0 +1,39 @@
+.btn {
+  padding: 16px 34px;
+
+  border-radius: 50px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  transition: 0.35s;
+
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--primary);
+
+  color: white;
+}
+
+.primary:hover {
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-lg);
+}
+
+.secondary {
+  background: white;
+
+  color: var(--primary);
+
+  border: 2px solid var(--primary);
+}
+
+.secondary:hover {
+  background: var(--primary);
+
+  color: white;
+}
