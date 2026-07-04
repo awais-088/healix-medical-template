@@ -1,0 +1,16 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+
+  color: var(--dark);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.number {
+  font-family: "Space Grotesk", sans-serif;
+}
