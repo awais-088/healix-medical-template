@@ -1,5 +1,5 @@
 "use client";
-
+import { navigation } from "@/data/navigation";
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -30,25 +30,11 @@ export default function Navbar() {
 
         <nav className={menuOpen ? "nav active" : "nav"}>
           <ul className="nav-links">
-            <li>
-              <a href="#">Home</a>
-            </li>
-
-            <li>
-              <a href="#">About</a>
-            </li>
-
-            <li>
-              <a href="#">Treatments</a>
-            </li>
-
-            <li>
-              <a href="#">Services</a>
-            </li>
-
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            {navigation.map((item) => (
+              <li key={item.id}>
+                <a href={item.link}>{item.name}</a>
+              </li>
+            ))}
           </ul>
         </nav>
 
