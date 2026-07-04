@@ -1,21 +1,13 @@
 import Navbar from "@/components/layout/Navbar";
 
+import Hero from "@/sections/hero/Hero";
+
 export default function Home() {
   return (
     <>
       <Navbar />
 
-      <main>
-        <section
-          style={{
-            height: "200vh",
-            paddingTop: "150px",
-            textAlign: "center",
-          }}
-        >
-          <h1>Healix Medical Template</h1>
-        </section>
-      </main>
+      <Hero />
     </>
   );
 }

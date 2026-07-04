@@ -1,9 +1,19 @@
 export const siteData = {
-  clinicName: "Liver & Gastro Care",
+  clinicName: "Liver & Gastro Care Clinic",
 
   doctorName: "Dr. Saif Ullah Sumra",
 
-  tagline: "Consultant Gastroenterologist & Hepatologist",
+  qualification:
+    "MBBS, MCPS (Internal Medicine), FCPS (Gastroenterology), MACG (USA)",
+
+  designation: "Consultant Gastroenterologist & Hepatologist",
+  rating: "5.0",
+
+  reviews: "500+",
+
+  availability: "Mon - Sat | 9:00 AM - 6:00 PM",
+  tagline:
+    "Advanced Digestive & Liver Care with Compassion and Clinical Excellence.",
 
   phone: "0300-1112088",
 
@@ -11,9 +21,9 @@ export const siteData = {
 
   email: "liverandgastrocare1@gmail.com",
 
-  location: "Dawood Ramzan Hospital, Main Bypass Road, Layyah",
+  location: "Near Dawood Ramzan Hospital, Main Bypass Road, Layyah",
 
-  experience: "15+",
+  experience: "12+",
 
   patients: "10000+",
 
