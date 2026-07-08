@@ -1,0 +1,61 @@
+.floating-widget {
+  position: fixed;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  z-index: 999;
+}
+
+.floating-widget a {
+  width: 62px;
+
+  height: 62px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: white;
+
+  box-shadow: 0 15px 35px rgba(15, 76, 129, 0.18);
+
+  color: var(--primary);
+
+  transition: 0.35s;
+}
+
+.floating-widget a:hover {
+  background: var(--primary);
+
+  color: white;
+
+  transform: translateY(-8px);
+}
+
+@media (max-width: 768px) {
+  .floating-widget {
+    right: 16px;
+
+    bottom: 16px;
+
+    gap: 12px;
+  }
+
+  .floating-widget a {
+    width: 56px;
+
+    height: 56px;
+  }
+}

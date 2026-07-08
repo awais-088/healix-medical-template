@@ -28,6 +28,6 @@ export const siteData = {
   patients: "10000+",
 
   procedures: "5000+",
-
+  map: "https://maps.google.com/?q=Dawood+Ramzan+Hospital+Layyah",
   satisfaction: "100%",
 };
