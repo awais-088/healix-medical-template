@@ -1,27 +1,83 @@
 .section-title {
   text-align: center;
 
-  margin-bottom: 70px;
+  max-width: 760px;
+
+  margin: 0 auto 80px;
 }
 
-.section-title p {
-  color: var(--secondary);
+.section-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  border-radius: 999px;
+
+  background: #eef8ff;
+
+  color: var(--primary);
+
+  font-size: 15px;
 
   font-weight: 700;
 
-  letter-spacing: 2px;
-
-  margin-bottom: 10px;
+  letter-spacing: 0.8px;
 
   text-transform: uppercase;
+
+  margin-bottom: 18px;
 }
 
 .section-title h2 {
-  font-size: 44px;
-
-  font-weight: 700;
+  font-size: 48px;
 
   line-height: 1.2;
 
-  color: var(--text-dark);
+  font-weight: 700;
+
+  color: var(--dark);
+
+  margin-bottom: 18px;
+}
+
+.section-divider {
+  display: flex;
+
+  justify-content: center;
+}
+
+.section-divider span {
+  width: 90px;
+
+  height: 4px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    margin-bottom: 60px;
+
+    padding: 0 12px;
+  }
+
+  .section-title h2 {
+    font-size: 34px;
+  }
+
+  .section-badge {
+    font-size: 13px;
+
+    padding: 9px 18px;
+  }
+
+  .section-divider span {
+    width: 70px;
+  }
 }
