@@ -242,13 +242,24 @@
   transition: 0.35s;
 }
 .hero-stats div:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.03);
+
+  box-shadow: 0 22px 55px rgba(15, 76, 129, 0.15);
 }
 
 .hero-stats h3 {
-  font-size: 36px;
+  font-size: 44px;
 
-  margin-bottom: 8px;
+  color: var(--primary);
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  transition: 0.35s;
+}
+.hero-stats div:hover h3 {
+  transform: scale(1.08);
 }
 
 .hero-stats p {

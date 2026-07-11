@@ -3,12 +3,14 @@ import "./Button.css";
 export default function Button({
   text,
 
+  variant,
+
   onClick,
 
-  variant = "primary",
+  type = "button",
 }) {
   return (
-    <button onClick={onClick} className={`btn ${variant}`}>
+    <button type={type} className={`btn ${variant || ""}`} onClick={onClick}>
       {text}
     </button>
   );

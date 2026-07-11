@@ -1,0 +1,177 @@
+.appointment-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+
+  margin-bottom: 8px;
+
+  color: var(--dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  padding: 15px 18px;
+
+  border: 1px solid #dbe7f3;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+
+  font-family: inherit;
+
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+
+  box-shadow: 0 0 0 4px rgba(15, 76, 129, 0.08);
+}
+
+textarea {
+  resize: vertical;
+
+  min-height: 120px;
+}
+
+.submit-appointment {
+  margin-top: 10px;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.submit-appointment:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 15px 35px rgba(15, 76, 129, 0.2);
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.error {
+  margin-top: 8px;
+
+  font-size: 14px;
+
+  color: #dc2626;
+
+  font-weight: 500;
+}
+
+.form-group input.error-input,
+.form-group textarea.error-input,
+.form-group select.error-input {
+  border-color: #dc2626;
+
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.appointment-success {
+  text-align: center;
+
+  padding: 20px 10px;
+
+  animation: fadeSuccess 0.5s ease;
+}
+
+@keyframes fadeSuccess {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: none;
+  }
+}
+
+.success-icon {
+  color: #16a34a;
+
+  margin-bottom: 25px;
+}
+
+.appointment-success h2 {
+  font-size: 34px;
+
+  margin-bottom: 18px;
+}
+
+.appointment-success p {
+  line-height: 1.8;
+
+  color: var(--gray);
+}
+
+.success-box {
+  margin: 35px 0;
+
+  padding: 28px;
+
+  border-radius: 22px;
+
+  background: #eef8ff;
+
+  text-align: left;
+}
+
+.success-box p {
+  margin-bottom: 14px;
+
+  font-weight: 500;
+}
+.submit-appointment:disabled {
+  opacity: 0.75;
+
+  cursor: not-allowed;
+
+  transform: none;
+}

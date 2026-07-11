@@ -5,8 +5,10 @@ import "./FloatingWidget.css";
 import { Phone, MessageCircle, MapPinned, CalendarDays } from "lucide-react";
 
 import { siteData } from "@/data/siteData";
-
+import { useAppointment } from "@/components/appointment/AppointmentContext";
 export default function FloatingWidget() {
+  const { setOpen } = useAppointment();
+
   return (
     <div className="floating-widget">
       <a
@@ -25,9 +27,13 @@ export default function FloatingWidget() {
         <MapPinned />
       </a>
 
-      <a href="#appointment" aria-label="Book">
+      <button
+        className="floating-book"
+        onClick={() => setOpen(true)}
+        aria-label="Book Appointment"
+      >
         <CalendarDays />
-      </a>
+      </button>
     </div>
   );
 }

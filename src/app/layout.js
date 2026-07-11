@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import { AppointmentProvider } from "@/components/appointment/AppointmentContext";
 import "@fontsource/inter";
 import "@fontsource/poppins/700.css";
 import "@fontsource/space-grotesk";
@@ -31,7 +31,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppointmentProvider>{children}</AppointmentProvider>
+      </body>
     </html>
   );
 }

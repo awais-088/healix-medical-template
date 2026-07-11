@@ -4,12 +4,14 @@ import "./AppointmentCTA.css";
 
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
-
+import { useAppointment } from "@/components/appointment/AppointmentContext";
 import { Phone, MessageCircle, CalendarCheck } from "lucide-react";
 
 import { siteData } from "@/data/siteData";
 
 export default function AppointmentCTA() {
+  const { setOpen } = useAppointment();
+
   return (
     <section className="appointment">
       <Container>

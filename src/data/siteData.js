@@ -23,11 +23,11 @@ export const siteData = {
 
   location: "Near Dawood Ramzan Hospital, Main Bypass Road, Layyah",
 
-  experience: "12+",
+  experience: 12,
 
-  patients: "10000+",
+  patients: 10000,
 
-  procedures: "5000+",
+  procedures: 5000,
   map: "https://maps.google.com/?q=Dawood+Ramzan+Hospital+Layyah",
   satisfaction: "100%",
 };

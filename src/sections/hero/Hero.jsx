@@ -10,7 +10,11 @@ import Badge from "@/components/ui/Badge";
 import { siteData } from "@/data/siteData";
 import Image from "next/image";
 import doctorImage from "@/assets/images/doctor/doctor.png";
+import { useAppointment } from "@/components/appointment/AppointmentContext";
+import Counter from "@/components/animations/Counter";
 export default function Hero() {
+  const { setOpen } = useAppointment();
+
   return (
     <section className="hero">
       <Container>
@@ -50,7 +54,7 @@ export default function Hero() {
               Expert Liver, Digestive & Endoscopy Care
             </h2>
             <div className="hero-buttons">
-              <Button text="Book Appointment" />
+              <Button text="Book Appointment" onClick={() => setOpen(true)} />
 
               <Button text="Call Reception" variant="secondary" />
             </div>
@@ -95,20 +99,25 @@ export default function Hero() {
         </div>
         <div className="hero-stats">
           <div>
-            <h3>{siteData.experience}</h3>
+            <h3>
+              <Counter end={siteData.experience} suffix="+" />
+            </h3>
 
             <p>Years Experience</p>
           </div>
 
           <div>
-            <h3>{siteData.patients}</h3>
+            <h3>
+              <Counter end={siteData.patients} suffix="+" />
+            </h3>
 
             <p>Happy Patients</p>
           </div>
 
           <div>
-            <h3>{siteData.procedures}</h3>
-
+            <h3>
+              <Counter end={siteData.procedures} suffix="+" />
+            </h3>
             <p>Successful Procedures</p>
           </div>
 

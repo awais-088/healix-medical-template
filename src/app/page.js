@@ -1,6 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import WhyChoose from "@/sections/whyChoose/WhyChoose";
 import Hero from "@/sections/hero/Hero";
+import FAQ from "@/sections/faq/FAQ";
+import Footer from "@/sections/footer/Footer";
+import AppointmentModal from "@/components/appointment/AppointmentModal";
 import PatientJourney from "@/sections/patientJourney/PatientJourney";
 import PatientTrust from "@/sections/patientTrust/PatientTrust";
 import FloatingWidget from "@/components/floating/FloatingWidget";
@@ -12,6 +15,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <AppointmentModal />
       <FloatingWidget />
       <Hero />
       <About />
@@ -21,6 +25,8 @@ export default function Home() {
       <Gallery />
       <PatientTrust />
       <PatientJourney />
+      <FAQ />
+      <Footer />
     </>
   );
 }

@@ -86,7 +86,7 @@
 
   color: #fff;
 
-  transform: rotate(-8deg);
+  transform: rotate(-8deg) scale(1.12);
 }
 
 .treatment-card h3 {
@@ -125,12 +125,20 @@
   padding: 0;
 }
 
+.learn-more {
+  transition: 0.35s;
+}
+
 .learn-more svg {
-  transition: 0.3s;
+  transition: 0.35s;
+}
+
+.treatment-card:hover .learn-more {
+  letter-spacing: 0.5px;
 }
 
 .treatment-card:hover .learn-more svg {
-  transform: translateX(6px);
+  transform: translateX(8px);
 }
 
 @media (max-width: 992px) {
