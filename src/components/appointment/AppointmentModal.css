@@ -30,22 +30,6 @@
   }
 }
 
-.appointment-modal {
-  width: 100%;
-
-  max-width: 700px;
-
-  background: white;
-
-  border-radius: 30px;
-
-  padding: 45px;
-
-  position: relative;
-
-  animation: popup 0.35s ease;
-}
-
 @keyframes popup {
   from {
     opacity: 0;
@@ -60,6 +44,27 @@
   }
 }
 
+.modal-content {
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+
+  width: 100%;
+
+  max-width: 860px;
+
+  max-height: 92vh;
+
+  overflow-y: auto;
+
+  border-radius: 34px;
+
+  padding: 50px;
+
+  position: relative;
+
+  animation: popup 0.35s;
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+}
 .close-modal {
   position: absolute;
 
@@ -105,8 +110,10 @@
 }
 
 @media (max-width: 768px) {
-  .appointment-modal {
+  .modal-content {
     padding: 28px;
+
+    max-height: 95vh;
 
     border-radius: 24px;
   }

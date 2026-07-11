@@ -20,14 +20,18 @@ export default function AppointmentModal() {
 
     window.addEventListener("keydown", handleEscape);
 
-    return () => window.removeEventListener("keydown", handleEscape);
+    return () => {
+      document.body.style.overflow = "auto";
+
+      window.removeEventListener("keydown", handleEscape);
+    };
   }, [setOpen]);
 
   if (!open) return null;
 
   return (
     <div className="appointment-overlay" onClick={() => setOpen(false)}>
-      <div className="appointment-modal" onClick={(e) => e.stopPropagation()}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-modal" onClick={() => setOpen(false)}>
           <X size={24} />
         </button>

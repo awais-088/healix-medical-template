@@ -29,9 +29,11 @@
 .navbar-container {
   display: flex;
 
+  align-items: center;
+
   justify-content: space-between;
 
-  align-items: center;
+  gap: 28px;
 }
 
 .logo {
@@ -111,7 +113,9 @@
 }
 
 .desktop-btn {
-  display: block;
+  margin-left: auto;
+
+  margin-right: 18px;
 }
 
 .menu-btn {
@@ -148,7 +152,11 @@
   }
 
   .menu-btn {
-    display: block;
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
   }
 
   .nav {
@@ -219,7 +227,7 @@
 }
 
 .mobile-nav li {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .mobile-nav li a:hover {
@@ -238,7 +246,7 @@
   transition: 0.3s;
 }
 .mobile-actions {
-  margin-top: 35px;
+  margin-top: 45px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -320,7 +328,7 @@
 .mobile-footer {
   margin-top: auto;
 
-  padding-top: 30px;
+  padding-top: 45px;
 
   text-align: center;
 }

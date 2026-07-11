@@ -25,7 +25,7 @@ export const siteData = {
 
   experience: 12,
 
-  patients: 10000,
+  patients: 8000,
 
   procedures: 5000,
   map: "https://maps.google.com/?q=Dawood+Ramzan+Hospital+Layyah",

@@ -11,14 +11,6 @@ export default function FloatingWidget() {
 
   return (
     <div className="floating-widget">
-      <a
-        href={`https://wa.me/${siteData.whatsapp}`}
-        target="_blank"
-        aria-label="WhatsApp"
-      >
-        <MessageCircle />
-      </a>
-
       <a href={`tel:${siteData.phone}`} aria-label="Call">
         <Phone />
       </a>

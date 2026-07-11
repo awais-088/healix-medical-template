@@ -1,6 +1,7 @@
 "use client";
 import { navigation } from "@/data/navigation";
 import { useState, useEffect } from "react";
+import NavbarQuote from "./NavbarQuote";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   PhoneCall,
@@ -18,7 +19,11 @@ import { useAppointment } from "@/components/appointment/AppointmentContext";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
   const [scrolled, setScrolled] = useState(false);
   const { setOpen } = useAppointment();
@@ -70,7 +75,26 @@ export default function Navbar() {
                 <ul>
                   {navigation.map((item) => (
                     <li key={item.id}>
-                      <a href={item.link} onClick={() => setMenuOpen(false)}>
+                      <a
+                        href={item.link}
+                        onClick={(e) => {
+                          e.preventDefault();
+
+                          setMenuOpen(false);
+
+                          if (!item.link || item.link === "#") return;
+
+                          setTimeout(() => {
+                            const section = document.querySelector(item.link);
+
+                            if (section) {
+                              section.scrollIntoView({
+                                behavior: "smooth",
+                              });
+                            }
+                          }, 300);
+                        }}
+                      >
                         <span>{item.name}</span>
 
                         <ChevronRight size={18} />
@@ -94,20 +118,6 @@ export default function Navbar() {
                     <div>
                       <strong>Call Reception</strong>
                       <small>{siteData.phone}</small>
-                    </div>
-                  </a>
-
-                  <a
-                    href={`https://wa.me/${siteData.whatsapp}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mobile-card"
-                  >
-                    <MessageCircleMore size={22} strokeWidth={2.2} />
-
-                    <div>
-                      <strong>WhatsApp</strong>
-                      <small>Quick Appointment</small>
                     </div>
                   </a>
 
@@ -145,7 +155,7 @@ export default function Navbar() {
             </motion.nav>
           )}
         </AnimatePresence>
-
+        <NavbarQuote />
         <div className="desktop-btn">
           <Button text="Book Appointment" onClick={() => setOpen(true)} />
         </div>

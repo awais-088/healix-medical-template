@@ -10,7 +10,11 @@ export default function Button({
   type = "button",
 }) {
   return (
-    <button type={type} className={`btn ${variant || ""}`} onClick={onClick}>
+    <button
+      type={type}
+      className={`btn ${variant || "primary"}`}
+      onClick={onClick}
+    >
       {text}
     </button>
   );

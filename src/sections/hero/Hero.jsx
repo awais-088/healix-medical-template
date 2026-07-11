@@ -3,7 +3,7 @@
 import "./Hero.css";
 
 import { motion } from "framer-motion";
-
+import TypingDesignation from "@/components/ui/TypingDesignation";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
@@ -16,7 +16,7 @@ export default function Hero() {
   const { setOpen } = useAppointment();
 
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <Container>
         <div className="hero-wrapper">
           <div className="hero-content">
@@ -50,20 +50,13 @@ export default function Hero() {
             <div className="hero-qualification">
               <p>{siteData.qualification}</p>
             </div>
-            <h2 className="hero-subtitle">
-              Expert Liver, Digestive & Endoscopy Care
-            </h2>
+            <TypingDesignation />
             <div className="hero-buttons">
               <Button text="Book Appointment" onClick={() => setOpen(true)} />
 
-              <Button text="Call Reception" variant="secondary" />
-            </div>
-            <div className="hero-trust">
-              <div className="stars">★★★★★</div>
-
-              <p>
-                <strong>{siteData.rating}</strong>({siteData.reviews} Reviews)
-              </p>
+              <a href={`tel:${siteData.phone}`}>
+                <Button text="Call Reception" variant="secondary" />
+              </a>
             </div>
           </div>
 
@@ -78,23 +71,6 @@ export default function Hero() {
               height={520}
               priority
             />
-            <div className="floating-card card-one">
-              <h4>Endoscopy</h4>
-
-              <p>Advanced Diagnostic Endoscopy</p>
-            </div>
-
-            <div className="floating-card card-two">
-              <h4>Liver Care</h4>
-
-              <p>Fatty Liver • Hepatitis • Cirrhosis</p>
-            </div>
-
-            <div className="floating-card card-three">
-              <h4>Digestive Care</h4>
-
-              <p>GERD • IBS • Stomach Disorders</p>
-            </div>
           </div>
         </div>
         <div className="hero-stats">

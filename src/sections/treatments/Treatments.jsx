@@ -11,7 +11,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Treatments() {
   return (
-    <section className="treatments">
+    <section id="treatments" className="treatments">
       <Container>
         <Reveal>
           <SectionTitle

@@ -2,7 +2,7 @@ export const navigation = [
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "#hero",
   },
 
   {
