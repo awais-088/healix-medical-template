@@ -1,53 +1,58 @@
 import {
-  Phone,
+  CalendarCheck,
   MapPin,
   Stethoscope,
-  Microscope,
-  Pill,
-  HeartHandshake,
+  ClipboardCheck,
+  HeartPulse,
+  Smile,
 } from "lucide-react";
 
 export const journey = [
   {
     id: 1,
-    icon: Phone,
+    icon: CalendarCheck,
     title: "Book Appointment",
     description:
-      "Call reception or send a WhatsApp message to schedule your visit.",
+      "Schedule your consultation online or by calling our reception team.",
   },
+
   {
     id: 2,
     icon: MapPin,
-    title: "Visit The Clinic",
+    title: "Visit the Clinic",
     description:
-      "Arrive at Dawood Ramzan Hospital at your scheduled appointment time.",
+      "Arrive at the clinic where our reception staff will assist you.",
   },
+
   {
     id: 3,
     icon: Stethoscope,
-    title: "Consultation",
+    title: "Doctor Consultation",
     description:
-      "Discuss your symptoms and medical history with Dr. Saif Ullah Sumra.",
+      "Receive a detailed examination and personalized treatment plan.",
   },
+
   {
     id: 4,
-    icon: Microscope,
-    title: "Diagnosis",
+    icon: ClipboardCheck,
+    title: "Diagnosis & Tests",
     description:
-      "Receive an accurate diagnosis and, if required, advanced endoscopic evaluation.",
+      "Advanced investigations including Endoscopy and Colonoscopy if required.",
   },
+
   {
     id: 5,
-    icon: Pill,
+    icon: HeartPulse,
     title: "Treatment",
     description:
-      "Get a personalized treatment plan tailored to your condition.",
+      "Evidence-based treatment tailored to your digestive and liver health.",
   },
+
   {
     id: 6,
-    icon: HeartHandshake,
-    title: "Follow-up Care",
+    icon: Smile,
+    title: "Follow-Up Care",
     description:
-      "Regular follow-up visits ensure long-term digestive and liver health.",
+      "Regular follow-up visits ensure long-term recovery and better health.",
   },
 ];

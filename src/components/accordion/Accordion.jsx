@@ -22,7 +22,9 @@ export default function Accordion({ items }) {
           <button className="accordion-header" onClick={() => toggle(item.id)}>
             <span>{item.question}</span>
 
-            {active === item.id ? <Minus size={22} /> : <Plus size={22} />}
+            <div className="accordion-icon">
+              {active === item.id ? <Minus size={20} /> : <Plus size={20} />}
+            </div>
           </button>
 
           <div

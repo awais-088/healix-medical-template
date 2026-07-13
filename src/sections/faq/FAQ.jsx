@@ -15,7 +15,7 @@ export default function FAQ() {
       <Container>
         <SectionTitle
           subtitle="Frequently Asked Questions"
-          title="Answers To Common Patient Questions"
+          title="Common Questions About Gastroenterology & Liver Care"
         />
 
         <Accordion items={faqData} />

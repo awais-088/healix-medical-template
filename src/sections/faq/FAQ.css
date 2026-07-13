@@ -1,6 +1,25 @@
 .faq {
   padding: 120px 0;
   background: #f8fbff;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq::before {
+  content: "";
+  position: absolute;
+  right: -220px;
+  top: -180px;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #edf8ff 0%, transparent 70%);
+  z-index: 0;
+}
+
+.faq .container {
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 992px) {
