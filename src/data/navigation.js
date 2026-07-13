@@ -4,27 +4,28 @@ export const navigation = [
     name: "Home",
     link: "#hero",
   },
-
   {
     id: 2,
     name: "About",
     link: "#about",
   },
-
   {
     id: 3,
     name: "Treatments",
     link: "#treatments",
   },
-
   {
     id: 4,
-    name: "Services",
-    link: "#services",
+    name: "Gallery",
+    link: "#gallery",
   },
-
   {
     id: 5,
+    name: "FAQ",
+    link: "#faq",
+  },
+  {
+    id: 6,
     name: "Contact",
     link: "#contact",
   },

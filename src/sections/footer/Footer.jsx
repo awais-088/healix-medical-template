@@ -10,8 +10,9 @@ import {
   Mail,
   MapPin,
   Clock,
-  MessageCircle,
   ChevronUp,
+  CalendarCheck,
+  CheckCircle2,
 } from "lucide-react";
 
 import { siteData } from "@/data/siteData";
@@ -24,14 +25,19 @@ export default function Footer() {
     });
 
   return (
-    <footer className="footer">
+    <footer className="footer" aria-labelledby="footer-heading">
       <Container>
+        <h2 id="footer-heading" className="sr-only">
+          Liver & Gastro Care Clinic Footer
+        </h2>
         <div className="footer-grid">
           {/* Column 1 */}
 
           <div className="footer-about">
             <Logo />
+            <p className="doctor-name">{siteData.doctorName}</p>
 
+            <p className="doctor-role">{siteData.designation}</p>
             <p>{siteData.tagline}</p>
           </div>
 
@@ -42,7 +48,7 @@ export default function Footer() {
 
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="#hero">Home</a>
               </li>
 
               <li>
@@ -78,19 +84,11 @@ export default function Footer() {
 
                 <a href={`tel:${siteData.phone}`}>{siteData.phone}</a>
               </li>
-
               <li>
-                <MessageCircle size={18} />
+                <CalendarCheck size={18} />
 
-                <a
-                  href={`https://wa.me/${siteData.whatsapp}`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  WhatsApp
-                </a>
+                <a href="#contact">Book Consultation</a>
               </li>
-
               <li>
                 <Mail size={18} />
 
@@ -108,7 +106,11 @@ export default function Footer() {
               <li>
                 <Clock size={18} />
 
-                <span>Mon - Sat | 3:00 PM - 10:00 PM</span>
+                <span>
+                  Monday – Saturday
+                  <br />
+                  3:00 PM – 10:00 PM
+                </span>
               </li>
             </ul>
           </div>
@@ -119,26 +121,51 @@ export default function Footer() {
             <h3>Specialized Care</h3>
 
             <ul>
-              <li>Endoscopy</li>
+              <li>
+                <CheckCircle2 size={16} />
+                Endoscopy
+              </li>
 
-              <li>Colonoscopy</li>
+              <li>
+                <CheckCircle2 size={16} />
+                Colonoscopy
+              </li>
 
-              <li>Liver Diseases</li>
+              <li>
+                <CheckCircle2 size={16} />
+                Liver Diseases
+              </li>
 
-              <li>Hepatitis</li>
+              <li>
+                <CheckCircle2 size={16} />
+                Hepatitis
+              </li>
 
-              <li>GERD</li>
+              <li>
+                <CheckCircle2 size={16} />
+                GERD
+              </li>
 
-              <li>IBS</li>
+              <li>
+                <CheckCircle2 size={16} />
+                IBS
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>
-            © {new Date().getFullYear()} {siteData.doctorName}. All Rights
-            Reserved.
-          </p>
+          <div className="footer-copy">
+            <p>
+              © {new Date().getFullYear()} {siteData.clinicName}. All Rights
+              Reserved.
+            </p>
+
+            <small>
+              Designed & Developed by
+              <strong> Muhammad Awais</strong>
+            </small>
+          </div>
 
           <button
             className="back-top"

@@ -26,6 +26,9 @@ export const siteData = {
   experience: 12,
 
   patients: 8000,
+  timings: "Monday - Saturday",
+
+  hours: "3:00 PM - 10:00 PM",
 
   procedures: 5000,
   map: "https://maps.google.com/?q=Dawood+Ramzan+Hospital+Layyah",

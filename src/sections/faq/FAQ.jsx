@@ -11,7 +11,7 @@ import { faqData } from "@/data/faq";
 
 export default function FAQ() {
   return (
-    <section className="faq">
+    <section id="faq" className="faq" aria-labelledby="faq-heading">
       <Container>
         <SectionTitle
           subtitle="Frequently Asked Questions"

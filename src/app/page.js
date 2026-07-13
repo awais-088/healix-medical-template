@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import WhyChoose from "@/sections/whyChoose/WhyChoose";
 import Hero from "@/sections/hero/Hero";
 import FAQ from "@/sections/faq/FAQ";
+import Contact from "@/components/contact/Contact";
 import Footer from "@/sections/footer/Footer";
 import AppointmentModal from "@/components/appointment/AppointmentModal";
 import PatientJourney from "@/sections/patientJourney/PatientJourney";
@@ -26,6 +27,7 @@ export default function Home() {
       <PatientTrust />
       <PatientJourney />
       <FAQ />
+      <Contact />
       <Footer />
     </>
   );
