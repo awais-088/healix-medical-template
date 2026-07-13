@@ -11,7 +11,7 @@ export const siteData = {
 
   reviews: "500+",
 
-  availability: "Mon - Sat | 9:00 AM - 6:00 PM",
+  availability: "Mon - Sat | 3:00 PM - 10:00 PM",
   tagline:
     "Advanced Digestive & Liver Care with Compassion and Clinical Excellence.",
 
