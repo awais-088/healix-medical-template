@@ -5,15 +5,18 @@ import "./AppointmentCTA.css";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { useAppointment } from "@/components/appointment/AppointmentContext";
-import { Phone, MessageCircle, CalendarCheck } from "lucide-react";
-
+import { PhoneCall, CalendarCheck, ArrowRight } from "lucide-react";
 import { siteData } from "@/data/siteData";
 
 export default function AppointmentCTA() {
   const { setOpen } = useAppointment();
 
   return (
-    <section className="appointment">
+    <section
+      id="appointment"
+      className="appointment"
+      aria-labelledby="appointment-title"
+    >
       <Container>
         <div className="appointment-card">
           <div className="appointment-content">
@@ -23,7 +26,7 @@ export default function AppointmentCTA() {
 
             <span className="appointment-badge">Book Your Consultation</span>
 
-            <h2>
+            <h2 id="appointment-title">
               Need Expert Gastro &
               <br />
               Liver Care?
@@ -44,17 +47,15 @@ export default function AppointmentCTA() {
             </div>
 
             <div className="appointment-buttons">
-              <a href={`tel:${siteData.phone}`}>
-                <Button text="Call Reception" />
-              </a>
+              <Button text="Book Appointment" onClick={() => setOpen(true)} />
 
-              <a
-                href={`https://wa.me/${siteData.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button text="WhatsApp" variant="secondary" />
-              </a>
+              <Button
+                text="Call Reception"
+                variant="secondary"
+                onClick={() => {
+                  window.location.href = `tel:${siteData.phone}`;
+                }}
+              />
             </div>
           </div>
         </div>

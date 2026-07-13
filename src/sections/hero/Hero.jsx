@@ -54,9 +54,13 @@ export default function Hero() {
             <div className="hero-buttons">
               <Button text="Book Appointment" onClick={() => setOpen(true)} />
 
-              <a href={`tel:${siteData.phone}`}>
-                <Button text="Call Reception" variant="secondary" />
-              </a>
+              <Button
+                text="Call Reception"
+                variant="secondary"
+                onClick={() => {
+                  window.location.href = `tel:${siteData.phone}`;
+                }}
+              />
             </div>
           </div>
 

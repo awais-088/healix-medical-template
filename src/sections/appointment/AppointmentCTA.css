@@ -6,16 +6,17 @@
 
 .appointment-card {
   position: relative;
-
   overflow: hidden;
 
   border-radius: 36px;
 
-  padding: 80px;
+  padding: 90px 80px;
 
-  background: linear-gradient(135deg, #0f4c81, #1976d2);
+  background: linear-gradient(135deg, #0f4c81 0%, #1565c0 55%, #42a5f5 100%);
 
   color: white;
+
+  box-shadow: 0 30px 80px rgba(15, 76, 129, 0.28);
 }
 
 .appointment-card::before {
@@ -53,6 +54,24 @@
 
   left: -100px;
 }
+.appointment-card::after,
+.appointment-card::before {
+  animation: floatGlow 8s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 .appointment-content {
   position: relative;
@@ -63,15 +82,11 @@
 }
 
 .appointment-icon {
-  width: 80px;
+  width: 84px;
 
-  height: 80px;
+  height: 84px;
 
   border-radius: 24px;
-
-  background: rgba(255, 255, 255, 0.15);
-
-  backdrop-filter: blur(12px);
 
   display: flex;
 
@@ -79,7 +94,19 @@
 
   align-items: center;
 
-  margin-bottom: 28px;
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  margin-bottom: 30px;
+
+  transition: 0.35s;
+}
+
+.appointment-card:hover .appointment-icon {
+  transform: rotate(-8deg) scale(1.08);
 }
 
 .appointment-badge {
@@ -97,13 +124,11 @@
 }
 
 .appointment h2 {
-  font-size: 54px;
+  font-size: clamp(2.1rem, 5vw, 3.5rem);
 
   line-height: 1.15;
 
   margin-bottom: 24px;
-
-  color: #fff;
 }
 
 .appointment p {
@@ -129,23 +154,50 @@
 }
 
 .appointment-features span {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.14);
 
-  padding: 12px 18px;
+  backdrop-filter: blur(12px);
+
+  padding: 14px 20px;
 
   border-radius: 999px;
 
   font-weight: 600;
+
+  transition: 0.35s;
+}
+
+.appointment-features span:hover {
+  background: white;
+
+  color: var(--primary);
+
+  transform: translateY(-3px);
 }
 
 .appointment-buttons {
   display: flex;
 
-  gap: 20px;
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 20px;
 
   flex-wrap: wrap;
 }
+.appointment-buttons .btn {
+  min-width: 220px;
 
+  justify-content: center;
+
+  display: inline-flex;
+
+  align-items: center;
+}
+.appointment-buttons .btn:hover {
+  transform: translateY(-4px);
+}
 .appointment-buttons a {
   text-decoration: none;
 }
@@ -156,9 +208,9 @@
   }
 
   .appointment-card {
-    padding: 40px 28px;
+    padding: 55px 26px;
 
-    text-align: center;
+    border-radius: 26px;
   }
 
   .appointment-content {
@@ -179,5 +231,17 @@
 
   .appointment-buttons {
     justify-content: center;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    width: 100%;
+  }
+
+  .appointment-buttons .btn {
+    width: 100%;
+
+    max-width: 340px;
   }
 }

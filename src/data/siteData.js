@@ -15,7 +15,7 @@ export const siteData = {
   tagline:
     "Advanced Digestive & Liver Care with Compassion and Clinical Excellence.",
 
-  phone: "0300-1112088",
+  phone: "+923001112088",
 
   whatsapp: "923001112088",
 

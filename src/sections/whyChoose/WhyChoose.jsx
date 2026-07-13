@@ -4,7 +4,7 @@ import "./WhyChoose.css";
 
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
-
+import { motion } from "framer-motion";
 import { features } from "@/data/features";
 
 export default function WhyChoose() {
@@ -21,7 +21,17 @@ export default function WhyChoose() {
             const Icon = item.icon;
 
             return (
-              <div className="why-card" key={item.id}>
+              <motion.div
+                className="why-card"
+                key={item.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.5,
+                  delay: item.id * 0.1,
+                }}
+              >
                 <div className="why-icon">
                   <Icon />
                 </div>
@@ -29,7 +39,7 @@ export default function WhyChoose() {
                 <h3>{item.title}</h3>
 
                 <p>{item.description}</p>
-              </div>
+              </motion.div>
             );
           })}
         </div>
