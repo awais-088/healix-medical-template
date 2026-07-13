@@ -1,26 +1,31 @@
+import reception from "@/assets/images/gallery/reception.png";
+import consultation from "@/assets/images/gallery/consultation.png";
+import waiting from "@/assets/images/gallery/waiting.png";
+import medicalFacility from "@/assets/images/gallery/medical_facility.png";
+
 export const gallery = [
   {
     id: 1,
-    image: "/images/gallery/clinic-1.jpg",
+    image: reception,
     title: "Reception Area",
-    alt: "Reception area at Liver & Gastro Care Clinic Layyah",
+    alt: "Reception Area",
   },
   {
     id: 2,
-    image: "/images/gallery/clinic-2.jpg",
+    image: consultation,
     title: "Consultation Room",
-    alt: "Consultation room of Dr. Saif Ullah Sumra",
+    alt: "Consultation Room",
   },
   {
     id: 3,
-    image: "/images/gallery/clinic-3.jpg",
+    image: waiting,
     title: "Waiting Area",
-    alt: "Patient waiting area",
+    alt: "Waiting Area",
   },
   {
     id: 4,
-    image: "/images/gallery/clinic-4.jpg",
+    image: medicalFacility,
     title: "Medical Facilities",
-    alt: "Modern medical facilities",
+    alt: "Medical Facilities",
   },
 ];

@@ -26,14 +26,80 @@
   transition: 0.35s;
 }
 
+.trust-card {
+  text-decoration: none;
+  color: inherit;
+}
+.trust-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid #eef5fc;
+}
+.trust-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 4px;
+
+  background: linear-gradient(90deg, #1565c0, #42a5f5);
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  transition: 0.35s;
+}
+
+.trust-card:hover::before {
+  transform: scaleX(1);
+}
 .trust-card:hover {
   transform: translateY(-10px);
+
+  box-shadow: 0 28px 70px rgba(15, 76, 129, 0.14);
 }
 
 .trust-icon {
-  margin-bottom: 24px;
+  transition: 0.35s;
 }
 
+.trust-card:hover .trust-icon {
+  transform: rotate(-10deg) scale(1.1);
+}
+.trust-btn {
+  margin-top: 25px;
+
+  background: var(--primary);
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 28px;
+
+  border-radius: 999px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.35s;
+}
+
+.trust-btn:hover {
+  transform: translateY(-3px);
+
+  background: #1565c0;
+}
 .trust-stars {
   font-size: 22px;
 

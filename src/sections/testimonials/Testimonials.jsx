@@ -32,6 +32,15 @@ export default function Testimonials() {
               <h3>{item.name}</h3>
 
               <span>{item.city}</span>
+              <div className="testimonial-footer">
+                <a
+                  href="https://www.google.com/search?sca_esv=176b5346a3f0d613&q=Dr.+Saif+Ullah+Sumra+Liver+%26+Gastro+Care+Clinic+Layyah#lrd=0x3925a77da34e41c9:0xd802a2adc84445d1,1,,,,"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read More Reviews →
+                </a>
+              </div>
             </div>
           ))}
         </div>

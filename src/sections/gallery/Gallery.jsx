@@ -11,7 +11,7 @@ import { gallery } from "@/data/gallery";
 
 export default function Gallery() {
   return (
-    <section className="gallery">
+    <section id="gallery" className="gallery">
       <Container>
         <SectionTitle
           subtitle="Our Clinic"

@@ -21,7 +21,13 @@ export default function PatientTrust() {
             const Icon = item.icon;
 
             return (
-              <div className="trust-card" key={item.id}>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="trust-card"
+                key={item.id}
+              >
                 <div className="trust-icon" style={{ color: item.color }}>
                   <Icon size={34} />
                 </div>
@@ -33,7 +39,9 @@ export default function PatientTrust() {
                 <h2>{item.rating}</h2>
 
                 <p>{item.reviews}</p>
-              </div>
+
+                <button className="trust-btn">{item.button}</button>
+              </a>
             );
           })}
         </div>
