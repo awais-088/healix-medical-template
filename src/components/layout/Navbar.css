@@ -44,8 +44,8 @@
   flex-shrink: 0;
 }
 .logo img {
-  width: 72px;
-  height: 72px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   flex-shrink: 0;
   transition: 0.35s;
@@ -59,15 +59,14 @@
   flex-direction: column;
 }
 .logo h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.15;
 }
 
 .logo p {
-  font-size: 14px;
-  color: var(--gray);
-  margin-top: 4px;
+  font-size: 13px;
+  margin-top: 2px;
 }
 
 .nav-links {
@@ -184,17 +183,18 @@
   }
 
   .logo img {
-    width: 64px;
-    height: 64px;
+    width: 52px;
+    height: 52px;
   }
 
   .logo h3 {
-    font-size: 1.55rem;
-    line-height: 1.15;
+    font-size: 1.2rem;
+    line-height: 1.2;
   }
 
   .logo p {
-    font-size: 12px;
+    font-size: 11px;
+    margin-top: 2px;
   }
 
   .logo-icon {

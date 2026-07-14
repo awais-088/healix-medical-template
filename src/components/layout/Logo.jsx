@@ -3,20 +3,19 @@ import { siteData } from "@/data/siteData";
 
 export default function Logo() {
   return (
-    <a href="#hero" className="logo">
+    <div className="logo">
       <Image
-        src="/logo/logo.webp"
-        alt={`${siteData.clinicName} Logo`}
-        width={62}
-        height={62}
+        src="/log.png"
+        alt={siteData.clinicName}
+        width={60}
+        height={60}
         priority
       />
 
       <div className="logo-text">
         <h3>{siteData.clinicName}</h3>
-
         <p>{siteData.doctorName}</p>
       </div>
-    </a>
+    </div>
   );
 }
