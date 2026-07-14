@@ -4,7 +4,7 @@ import "./Footer.css";
 
 import Container from "@/components/ui/Container";
 import Logo from "@/components/layout/Logo";
-
+import { Facebook, Instagram } from "lucide-react";
 import {
   Phone,
   Mail,
@@ -153,7 +153,31 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <div className="footer-social">
+          <h4>Follow Dr. Saif Ullah Sumra on Social Media</h4>
 
+          <div className="footer-social-links">
+            <a
+              href="https://web.facebook.com/drsaifullahsumra/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} />
+              <span>Facebook</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/drsaifsumra"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} />
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
         <div className="footer-bottom">
           <div className="footer-copy">
             <p>
@@ -162,8 +186,15 @@ export default function Footer() {
             </p>
 
             <small>
-              Designed & Developed by
-              <strong> Muhammad Awais</strong>
+              Designed & Developed by{" "}
+              <a
+                href="https://www.linkedin.com/in/muhammad-awais-214335357/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="developer-link"
+              >
+                Muhammad Awais
+              </a>
             </small>
           </div>
 
