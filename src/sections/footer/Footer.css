@@ -168,29 +168,30 @@
 .footer a {
   color: rgba(255, 255, 255, 0.85);
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.footer a {
+/* Only normal footer links get underline animation */
+.footer li > a {
   display: inline-flex;
   align-items: center;
   position: relative;
 }
 
-.footer a::after {
+.footer li > a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
-  height: 2px;
   width: 0;
+  height: 2px;
   background: white;
   transition: 0.35s;
 }
 
-.footer a:hover::after {
+.footer li > a:hover::after {
   width: 100%;
 }
-
 .footer-social {
   margin-top: 70px;
   margin-bottom: 35px;
