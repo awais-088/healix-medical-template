@@ -1,16 +1,53 @@
+/* Headings */
+
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
-
   color: var(--dark);
+  line-height: 1.2;
+  overflow-wrap: break-word;
 }
+
+/* Body */
 
 body {
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-x: hidden;
 }
+
+/* Numbers */
 
 .number {
   font-family: "Space Grotesk", sans-serif;
+}
+
+/* Prevent overflow */
+
+p,
+span,
+a,
+li,
+small {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Responsive headings */
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
 }

@@ -33,14 +33,10 @@
 }
 
 .section-title h2 {
-  font-size: 48px;
-
-  line-height: 1.2;
-
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.15;
   font-weight: 700;
-
   color: var(--dark);
-
   margin-bottom: 18px;
 }
 
@@ -68,7 +64,8 @@
   }
 
   .section-title h2 {
-    font-size: 34px;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .section-badge {

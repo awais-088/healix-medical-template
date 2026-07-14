@@ -65,7 +65,8 @@
 }
 
 .logo h3 {
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 1.2;
 }
 
 .logo p {
@@ -177,6 +178,34 @@
     padding: 50px 30px;
 
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+  }
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .logo {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .logo h3 {
+    font-size: 17px;
+    line-height: 1.25;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .logo-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .menu-btn {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
   }
 
   .nav.active {
