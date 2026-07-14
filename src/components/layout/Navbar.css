@@ -38,32 +38,21 @@
 
 .logo {
   display: flex;
-
   align-items: center;
-
-  gap: 15px;
+  gap: 16px;
+  text-decoration: none;
+  flex-shrink: 0;
 }
-
-.logo-icon {
-  width: 52px;
-
-  height: 52px;
-
+.logo img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.logo-text {
   display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  border-radius: 50%;
-
-  background: var(--primary);
-
-  color: white;
-
-  font-size: 20px;
+  flex-direction: column;
 }
-
 .logo h3 {
   font-size: 22px;
   line-height: 1.2;
@@ -188,9 +177,14 @@
     min-width: 0;
   }
 
+  .logo img {
+    width: 52px;
+    height: 52px;
+  }
+
   .logo h3 {
-    font-size: 17px;
-    line-height: 1.25;
+    font-size: 1.55rem;
+    line-height: 1.15;
   }
 
   .logo p {

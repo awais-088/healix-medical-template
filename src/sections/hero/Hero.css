@@ -250,14 +250,13 @@
 
 .hero-stats h3 {
   font-size: 44px;
-
   color: var(--primary);
-
   font-weight: 700;
-
   margin-bottom: 10px;
-
   transition: 0.35s;
+
+  white-space: nowrap;
+  line-height: 1;
 }
 .hero-stats div:hover h3 {
   transform: scale(1.08);
@@ -276,7 +275,10 @@
     padding-top: 110px;
     padding-bottom: 60px;
   }
-
+  .hero-stats h3 {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
   .hero-wrapper {
     display: grid;
 
@@ -383,9 +385,9 @@
     font-size: 15px;
   }
   .hero-stats div {
-    min-height: 135px;
+    min-height: 150px;
     min-width: 0;
-    padding: 18px;
+    padding: 16px;
   }
   .hero p {
     width: 100%;
