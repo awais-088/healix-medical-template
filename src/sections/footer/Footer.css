@@ -46,6 +46,29 @@
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.75);
 }
+.footer-about .logo {
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.footer-about .logo img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: white;
+  padding: 6px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.footer-about .logo h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.footer-about .logo p {
+  color: rgba(255, 255, 255, 0.75);
+}
 .footer::after {
   content: "";
 

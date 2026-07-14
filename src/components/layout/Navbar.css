@@ -44,24 +44,30 @@
   flex-shrink: 0;
 }
 .logo img {
-  width: 62px;
-  height: 62px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
   flex-shrink: 0;
+  transition: 0.35s;
+}
+
+.logo:hover img {
+  transform: rotate(-8deg) scale(1.05);
 }
 .logo-text {
   display: flex;
   flex-direction: column;
 }
 .logo h3 {
-  font-size: 22px;
-  line-height: 1.2;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
 }
 
 .logo p {
-  font-size: 13px;
-
+  font-size: 14px;
   color: var(--gray);
+  margin-top: 4px;
 }
 
 .nav-links {
@@ -178,8 +184,8 @@
   }
 
   .logo img {
-    width: 52px;
-    height: 52px;
+    width: 64px;
+    height: 64px;
   }
 
   .logo h3 {
