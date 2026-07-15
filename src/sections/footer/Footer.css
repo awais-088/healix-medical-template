@@ -166,9 +166,12 @@
 }
 
 .footer a {
-  color: rgba(255, 255, 255, 0.85);
-  transition: 0.3s;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer li > a {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Only normal footer links get underline animation */
@@ -269,19 +272,21 @@
 }
 
 .footer-social-links a svg {
-  color: #9fd3ff;
-
+  color: #bfe3ff;
   transition: 0.35s;
 }
 
 .footer-social-links a:hover {
   background: #fff;
-  color: #1565c0 !important;
-  transform: translateY(-4px);
+  color: var(--primary);
+  border-color: #fff;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .footer-social-links span {
   color: inherit;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -380,6 +385,7 @@
 
 .developer-link:hover {
   color: #9fd3ff;
+  cursor: pointer;
 }
 
 .developer-link:hover::after {
@@ -444,7 +450,7 @@
   }
 
   .footer-social-links a {
-    width: 240px;
+    width: min(240px, 100%);
 
     justify-content: center;
   }

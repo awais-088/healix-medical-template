@@ -4,7 +4,7 @@ import "./Footer.css";
 
 import Container from "@/components/ui/Container";
 import Logo from "@/components/layout/Logo";
-import { Facebook, Instagram } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import {
   Phone,
   Mail,
@@ -163,7 +163,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <Facebook size={20} />
+              <FaFacebookF size={18} />
               <span>Facebook</span>
             </a>
 
@@ -173,7 +173,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <Instagram size={20} />
+              <FaInstagram size={18} />
               <span>Instagram</span>
             </a>
           </div>
