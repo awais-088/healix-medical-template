@@ -1,36 +1,166 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 Healix Medical Template
 
-## Getting Started
+A modern, responsive, and SEO-friendly healthcare website built with **Next.js 16** for doctors, clinics, and healthcare professionals.
 
-First, run the development server:
+This project focuses on providing a premium digital experience with clean UI, smooth animations, mobile responsiveness, and WhatsApp appointment booking.
+
+---
+
+## 🌐 Live Demo
+
+👉 https://drsaifullahsumra.vercel.app/
+
+---
+
+# ✨ Features
+
+- ✅ Modern & Professional Healthcare UI
+- ✅ Fully Responsive Design
+- ✅ Built with Next.js 16
+- ✅ SEO Ready Architecture
+- ✅ WhatsApp Appointment Booking
+- ✅ Google Maps Integration
+- ✅ Treatments & Services Section
+- ✅ About Doctor Section
+- ✅ FAQ Section
+- ✅ Contact Form
+- ✅ Patient Journey Timeline
+- ✅ Testimonials
+- ✅ Gallery
+- ✅ Premium Animations
+- ✅ Fast Loading
+- ✅ Clean Folder Structure
+
+---
+
+# 🛠 Tech Stack
+
+- Next.js 16
+- React 19
+- CSS Modules
+- Framer Motion
+- Lucide React
+- React Icons
+- Vercel
+
+---
+
+# 📱 Responsive Design
+
+The website is fully optimized for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+# 🚀 Performance
+
+Designed with:
+
+- SEO Best Practices
+- Responsive Layout
+- Optimized Images
+- Fast Loading
+- Smooth User Experience
+
+---
+
+# 📂 Project Structure
+
+```
+app/
+components/
+public/
+styles/
+data/
+```
+
+---
+
+# 📸 Screenshots
+
+> Add screenshots here after uploading them to the repository.
+
+Example:
+
+```
+screenshots/
+
+homepage.png
+
+about.png
+
+gallery.png
+
+mobile.png
+```
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/awais-088/healix-medical-template.git
+```
+
+Navigate to the project
+
+```bash
+cd healix-medical-template
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- Online Appointment Dashboard
+- Receptionist Panel
+- Payment Integration
+- Multi-Doctor Support
+- Admin Dashboard
+- Patient Portal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Author
 
-## Deploy on Vercel
+**Muhammad Awais**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Software Engineer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+LinkedIn
+
+https://www.linkedin.com/in/mr-awais-214335357
+
+GitHub
+
+https://github.com/awais-088
+
+---
+
+# License
+
+This project is intended for educational, portfolio, and demonstration purposes.
